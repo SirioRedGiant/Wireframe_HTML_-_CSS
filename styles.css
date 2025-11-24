@@ -1,0 +1,21 @@
+/*
+    
+    SEZIONE DI RESET GLOBALE
+    Garantisce che il layout sia coerente tra i vari browser,
+    rimuovendo i margini e i padding predefiniti dei browser.
+    
+*/
+/*
+   
+    Perché è importante fare questo "reset"?
+    Ogni browser (Chrome, Firefox, Safari, Edge) ha dei propri stili predefiniti che applica automaticamente a tutti questi elementi. Ad esempio, un tag <h1> ha già un margine superiore e inferiore di default, e lo stesso vale per i paragrafi <p>.
+    Applicando margin: 0; padding: 0; a tutti gli elementi con il selettore universale, stai azzerando questi stili predefiniti del browser, garantendo che la tua pagina web appaia identica in qualsiasi browser tu la visualizzi. è una "tela bianca" pulita da personalizzare con il tuo CSS.
+
+*/
+
+/* TODO: il simbolo dell'asterisco (*) è chiamato "selettore universale" in CSS.*/
+* {
+    margin: 0; /* Rimuove il margine predefinito da tutti gli elementi (TAG html)*/
+    padding: 0; /* Rimuove il padding predefinito da tutti gli elementi(TAG html) */
+    box-sizing: border-box; /* Include padding e bordo nel calcolo della larghezza/altezza finale di un TAG */
+}
